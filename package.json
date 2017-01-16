@@ -1,0 +1,27 @@
+{
+  "name": "@nx-js/meta-middleware",
+  "version": "1.0.0",
+  "description": "An NX middleware, responsible for handling meta data and analytics.",
+  "main": "meta.js",
+  "author": {
+    "name": "Miklos Bertalan",
+    "email": "miklos.bertalan@risingstack.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:nx-js/meta-middleware.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nx-js/meta-middleware/issues"
+  },
+  "homepage": "http://nx-framework.com",
+  "license": "MIT",
+  "keywords": [
+    "nx",
+    "middleware",
+    "meta",
+    "description",
+    "title",
+    "analytics"
+  ]
+}
