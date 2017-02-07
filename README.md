@@ -5,9 +5,7 @@ The `meta` middleware is responsible for handling page metadata and analytics.
 - name: meta
 - direct middleware dependencies: none
 - all middleware dependencies: none
-- processes: element nodes
-- throws on: text nodes
-- use as: component middleware
+- type: component middleware
 - [docs](http://nx-framework.com/docs/middlewares/meta)
 
 ## Installation

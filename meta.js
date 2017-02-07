@@ -1,12 +1,14 @@
 'use strict'
 
+const dom = require('@nx-js/dom-util')
 const secret = {
   config: Symbol('meta config')
 }
 
 module.exports = function metaFactory (config) {
   function meta (elem) {
-    config = elem[secret.config] = Object.assign({}, findParentConfig(elem), config)
+    const parentConfig = dom.findAncestorProp(elem, secret.config)
+    config = elem[secret.config] = Object.assign({}, parentConfig, config)
 
     if (config.title) {
       document.title = config.title
@@ -32,15 +34,8 @@ module.exports = function metaFactory (config) {
     }
   }
   meta.$name = 'meta'
+  meta.$type = ['component']
   return meta
-}
-
-function findParentConfig (elem) {
-  elem = elem.parentNode
-  while (elem && elem[secret.config] === undefined) {
-    elem = elem.parentNode
-  }
-  return elem ? elem[secret.config] : undefined
 }
 
 function setMetaTag (name, content) {

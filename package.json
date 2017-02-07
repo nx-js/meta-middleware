@@ -1,7 +1,7 @@
 {
   "name": "@nx-js/meta-middleware",
   "version": "1.0.0",
-  "description": "An NX middleware, responsible for handling meta data and analytics.",
+  "description": "An NX middleware, responsible for handling metadata and analytics.",
   "main": "meta.js",
   "author": {
     "name": "Miklos Bertalan",
@@ -23,5 +23,8 @@
     "description",
     "title",
     "analytics"
-  ]
+  ],
+  "dependencies": {
+    "@nx-js/dom-util": "^1.0.0"
+  }
 }
