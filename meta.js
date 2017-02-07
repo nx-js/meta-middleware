@@ -34,7 +34,7 @@ module.exports = function metaFactory (config) {
     }
   }
   meta.$name = 'meta'
-  meta.$type = ['component']
+  meta.$type = 'component'
   return meta
 }
 
